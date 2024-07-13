@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="width: 100%; height: 438px; margin-top: 28px; margin-bottom: 6px;">
+    <form id="form2" runat="server" style="background-color: #C0C0C0">
+    <div id="container">
+    <div id="header" style="background-image: url('/laptopShop/imgs/header.png')">
+  <div id="login">
+   <div id="login">
+       <div class="style1">
+           &nbsp;<br />
+       <span class="style1">
+       <span 
+           class="style10" style="font-size: xx-large"><strong>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Image ID="Image1" runat="server" Height="114px" ImageUrl="~/Image/11hp logo.png" 
+           Width="110px" />
+           &nbsp; ONLINE LAPTOP SHOP</strong></span><strong><span 
+           class="style12" style="font-size: 75px"> 
+       </span><span class="style10">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </strong>
+&nbsp;&nbsp;
+       <strong style="background-color: #00FFFF">
+       <br />
+       </strong></span>
+       <span class="style3">
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style9"> 
+       </div>
+      <div style="height: 86px; background-color: #666666;" class="style7">
+             <asp:Menu ID="Menu2" runat="server" ForeColor="White" Height="62px" 
+                 Orientation="Horizontal" RenderingMode="Table" 
+                 
+                 style="color: #FFFFFF; margin-left: 360px; font-weight: 700; font-size: large;" 
+                 Width="847px">
+                 <Items>
+                     <asp:MenuItem Text="Manage Product" NavigateUrl="~/addproduct.aspx">
+                     </asp:MenuItem>
+                     <asp:MenuItem Text="View Feedback" NavigateUrl="~/View Feedback.aspx"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/registrationadmin.aspx" Text="View Registration" 
+                         Value="View Registration"></asp:MenuItem>
+                     <asp:MenuItem Text="View Orders" NavigateUrl="~/view order.aspx">
+                     </asp:MenuItem>
+                 </Items>
+             </asp:Menu>
+             <br class="style8" />        &nbsp;&nbsp;&nbsp;&nbsp;
+             <br />
+      </div>
+         
+       </span>
+       <span class="style13" style="background-color: #C0C0C0">
+       </span></div>
+         
+ </div>
+  </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

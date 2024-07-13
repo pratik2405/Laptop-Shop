@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            
+            height: 78px;
+            width: 100%;
+        }
+        .style2
+        {
+            height: 78px;
+            width: 336px;
+        }
+        .style3
+        {
+            font-family: "Bahnschrift SemiBold Condensed";
+        }
+        .style4
+        {
+            font-family: "Bahnschrift SemiBold SemiConden";
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table width="100%">
+                <tr>
+                    <td class="style2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image/11hp%20logo.png" 
+                            
+                            style="height: 101px; width: 98px; margin-left: 144px; margin-top: 0px;" />&nbsp;
+                    </td>
+                    <td 
+                        style="font-family: 'Bahnschrift SemiBold'; font-size: 30px;" 
+                        class="style1" height="90px" width="100%">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style4">ONLINE LAPTOPS SHOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span 
+                            class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;<asp:Image 
+                            ID="Image2" runat="server" Height="36px" 
+                            ImageUrl="~/Image/addcart.jpg" Width="40px" />
+                        &nbsp;&nbsp; </span>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+            <asp:Menu ID="Menu1" runat="server" BorderColor="Black" BorderStyle="Double" 
+                Orientation="Horizontal" RenderingMode="Table" Height="40px" 
+                Width="100%" onmenuitemclick="Menu1_MenuItemClick">
+                <DynamicHoverStyle BorderStyle="Solid" />
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="PRODUCT'S" Value="Product" NavigateUrl="~/product2.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="ABOUT US" Value="ABOUT US" NavigateUrl="~/aboutus.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="CONTACT US" Value="Contact us" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="FEEDBACK" Value="Feedback" NavigateUrl="~/Feedback.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="LOGIN" Value="Login">
+                        <asp:MenuItem NavigateUrl="~/loginaspx.aspx" Text="USER LOGIN" 
+                            Value="USER LOGIN"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/adminlogin.aspx" Text="ADMIN LOGIN" 
+                            Value="ADMIN LOGIN"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticMenuItemStyle BackColor="#66FFFF" Font-Bold="False" 
+                    Font-Names="Bahnschrift Light" ForeColor="Black" HorizontalPadding="50px" 
+                    VerticalPadding="6px" />
+            </asp:Menu>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server" Visible="True">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+    </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
