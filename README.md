@@ -5,7 +5,7 @@ It provides a user-friendly interface for customers to view product details, man
 
 ## Features :-
 
-**User Functionality :-**
+## User Functionality :-
 
 **View Product Details :** Users can browse and view detailed information about available laptops.
 
@@ -17,7 +17,7 @@ It provides a user-friendly interface for customers to view product details, man
 
 **Send Feedback :** Users can provide feedback about products and services.
 
-**Admin Functionality :-**
+## Admin Functionality :-
 
 **Add Product :** Admins can add new laptop products to the inventory.
 
@@ -31,7 +31,7 @@ It provides a user-friendly interface for customers to view product details, man
 
 **View Order Details :** Admins can access details about customer orders.
 
-**Technologies Used :-**
+## Technologies Used :-
 
 **ASP.NET :** For building the web application framework.
 
